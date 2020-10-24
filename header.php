@@ -13,7 +13,7 @@
 <body> 
 <header>
         <a href="#"> 
-            <img src="images/Haikyuu-logo.png" alt="logo"> 
+            <img src="Images/Haikyuu-logo.png" alt="logo"> 
         </a> 
 </header> 
 
