@@ -24,12 +24,21 @@
        ?>
        <!--include class from css style sheet to make it look fancy-->
        <form action="includes/signup.inc.php" method="post">
-         <input type="text" name="uid" placeholder="Username">
-         <input type="text" name="mail" placeholder="E-mail">
-         <input type="password" name="pwd" placeholder="Password">
-         <input type="password" name="pwd-repeat" placeholder="Repeat Password">
-         <button type="submit" name="signup-submit">Signup</button> 
-       </form>
+            <br><br>
+            <label>New Username</label>
+            <input type="text" name="uid" placeholder="Username">
+            <br><br>
+            <label>Your Email</label>
+            <input type="text" name="mail" placeholder="Email">
+            <br><br>
+            <label>New Password</label>
+            <input type="password" name="pwd" placeholder="Password">
+            <br><br>
+            <label>Repeat Password</label>
+            <input type="password" name="pwd-repeat" placeholder="Repeat Password">
+            <br><br>
+            <button type="submit" name="signup-submit">Signup</button>
+            </form>
     </main> 
 
 <?php
