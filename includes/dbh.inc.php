@@ -2,7 +2,7 @@
 $servername="mindspaceconnection";
 $dBUsername="n7zj77cjgp9673ei"; 
 $dBPassword="g2xz0qa3uchr136m"; 
-$dBName="s8f679033bj5vycm";
+$dBName="loginsystem";
 
 
 $conn= mysqli_connect($servername,$dBUsername,$dBPassword,$dBName);
