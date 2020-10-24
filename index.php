@@ -8,7 +8,7 @@
 <meta name="description" content="This is an example"> 
 <meta name=viewport content="width=device-width,initial-scale=1"> 
 <title></title> 
-<!--Link to css styles sheet-->
+<link rel="stylesheet" href="style.css">
 </head> 
 <body> 
 <header>
@@ -33,7 +33,15 @@
 <main> 
     <?php 
         if(isset($_SESSION['userId'])){ 
-                echo '<p>You are logged in!</p>';    
+                echo '<p>You are logged in!</p>';  
+                echo '<nav class="navigation navsize">
+                <ul>
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="Zen.html">Zen Garden</a></li>
+                    <li><a href="schedule.php">Schedule</a></li>
+                    <li><a href="selfcaree.html">Self-Care</a></li>
+                </ul>
+            </nav>';
             }else{
                 echo '<p>You are logged out!</p>'; 
                 echo '<form action="includes/login.inc.php" method="post">
