@@ -1,8 +1,8 @@
 <?php
-$servername="mindspaceconnection";
+$servername="s0znzigqvfehvff5.cbetxkdyhwsb.us-east-1.rds.amazonaws.com";
 $dBUsername="n7zj77cjgp9673ei"; 
 $dBPassword="g2xz0qa3uchr136m"; 
-$dBName="loginsystem";
+$dBName="mindspaceconnection";
 
 
 $conn= mysqli_connect($servername,$dBUsername,$dBPassword,$dBName);
