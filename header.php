@@ -12,11 +12,14 @@
 </head> 
 <body> 
 <header>
+    <h1>
         <a href="#"> 
             <img src="Images/Haikyuu-logo.png" alt="logo"> 
         </a> 
+    </h1>
 </header> 
-
+    
+    <section>
         <?php
             if(isset($_SESSION['userId'])){ 
                 echo '<form action="includes/logout.inc.php" method="post">
@@ -38,6 +41,9 @@
             
             }
         ?>
+    </section>
+  </body>
+    
 
        
 
