@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Meal Organizer</title>
+</head>
+<body>
+<head>
+<div style="background-image: url('FoodArt.png);">
+</div>
+</head>
+</body>
+<head>
+<h1 style="text-align:center;">Meal Organizer</h1>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+</style>
+</head>
+<body>
+
+
+<div class="dropdown">
+  <button class="dropbtn">Menu</button>
+  <div class="dropdown-content">
+    <a href="index.php">Home</a>
+    <a href="#">Schedule</a>
+    <a href="ZenGarden.html">Zen Garden</a>
+    <a href="mealPage.html">Meal Organizer</a>
+    <a href="selfcare.html">Self-Care</a>
+   </div>
+</div>
+
+<h2>Recommended Snacks for Studying</h2>
+<p>-Almonds</p>
+<p>-Dried Fruit</p>
+<p>-Dark Chocolate</p>
+<p>-Air-popped Popcorn</p>
+<p>-Edamame</p>
+<p>-Apples and nut butter</p>
+<p>-Smoothies</p>
+<p>-Fruid Salad</p>
+<p>-Veggies and Hummus</p>
+<p>-Frozen grapes</p>
+<p>-Brown rice crackers</p>
+<p>-Cheese</p>
+<p>-Coffe with milk</p>
+<p>-Muesli bars</p>
+<p>-Greek yogurt</p>
+<p></p>
+<p></p>
+
+<div>
+            <h2 class="select">Select a snack recipe</h2>
+            <button type="button" onclick="func1()">Banana Dog Bites</button>
+            <button type="button" onclick="func3()">Frozen Yogurt-Covered Blueberries</button>
+            <button type="button" onclick="func4()">Chocolate Avocado Pudding</button>
+            <button type="button" onclick="func4()">Healthy Five-Ingredient Granola Bar</button>
+            </div>
+    
+            <section>
+            <script>
+            function func1() { 
+            document.getElementById("Snacks").innerHTML = "Ingredients: 2 tortillas, ¼ cup peanut butter or almond or sunflower butter, 2 bananas, peeled";
+            document.getElementById("SnackRecipe").innerHTML = "Steps: 1. Place 1 tortilla on a flat surface and spread 2 tablespoons of peanut butter on the tortilla to coat it evenly.
+2. Place one whole banana near the edge of the tortilla and roll it up.
+3. Slice the banana dog into ½-inch rounds.
+4. Repeat to make a second banana dog and serve.";
+            }
+<!--
+            function func2() { 
+            document.getElementById("Snacks").innerHTML = "Type 2A is gentle with a loose wave, type 2B is more defined where water may produce small waves, and type 2C has curves that may be frizzy when damp."
+            document.getElementById("SnackRecipe").innerHTML = "Routine for type 2A includes avoiding oil and cream products, and 2C includes using a diffuser to reduce frizz and anti-humidity products.";
+             }
+            function func3() { 
+            document.getElementById("Snacks").innerHTML = "Type 3A is loose curls bigger than the end of a taper candle, 3B has more volume, and 3C is described as coils around the diameter of a straw.";
+            document.getElementById("SnackRecipe").innerHTML = "Recommendations include avoiding ponytails that can cause hair loss, avoiding silicons and sufates that dry the curls and cause them to lose definition, and using a leave-in conditioner and air-drying.";
+             }
+            function func4() { 
+            document.getElementById("Snacks").innerHTML = "Type 4A has curls the diameter of a chopstick and is very fragile, 4B has zig-zags, and 4C is easily breakable.";
+            document.getElementById("SnackRecipe").innerHTML = "For 4A use deep conditioning creams and not oils to moisturize the hair and do not tuck the hair. For 4B, try to detangle hair into sections when applying conditioner to leave in, and for 4C nourish the hair with butter and coconut oil or other conditioners rich with healthy elements.";
+             }
+-->
+            </script>
+           </section>
+
+
+</body>
+</head>
+</html>
