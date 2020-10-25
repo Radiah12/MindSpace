@@ -1,0 +1,49 @@
+p{
+    text-align: left;
+    font-size: 20px;
+    margin: auto;
+}
+h1{
+    text-align: center;
+}
+section{
+    border: dodgerblue;
+    margin: 10px;
+    background-color: #cfe6f0;
+    border: ivory;
+    margin-bottom: 5px;
+    padding-bottom: 1%;
+}
+button{
+    text-align: center;
+    background-color: dodgerblue;
+    color: rgb(255, 255, 255);
+    padding: 2%;
+    font-weight: bolder;
+    font-size: 100%;
+    border-color: rgb(219, 235, 255);
+    border-radius: 10%;
+}
+h3{
+    color: #1363cc;
+    font-family: serif;
+}
+h2{
+    color:#1363cc;
+    font-size: 24px;
+}
+.select{
+    text-align: center;
+}
+div{
+    
+    margin: auto;
+    width: 40%;
+}
+header{
+    margin:auto;
+    text-align: center;
+}
+body{
+    background-image: url("img/white art.png");
+}
