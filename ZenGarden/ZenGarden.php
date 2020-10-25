@@ -45,9 +45,9 @@ img{
  <img src= "../Images/logo.jpg" style="width:200px"> 
  <ul>
   <li><a href="../SelfCare/selfcare.php">Self-Care</a></li>
-        <li><a href="Schedule.php" >Schedule</a></li>
+        <li><a href="../Schedule/Schedule.php" >Schedule</a></li>
   <li><a href="ZenGarden.php">Zen Garden</a></li>
-  <li><a href="MealIdeas.php">Meal Organizer</a></li>
+  <li><a href="../MealIdeas/MealIdeas.php">Meal Organizer</a></li>
   <li><div>
     <?php
         if(isset($_SESSION['userId'])){
