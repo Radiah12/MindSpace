@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+ <head> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zen Garden</title>
+</head>
+<style> 
+* {box-sizing:border-box}
+#enjoy{
+  width:50%;
+  position:relative;
+  left:25%;
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+   top:0; 
+  width:100%;
+}
+
+li {
+  float: left;
+  width: 20%;
+}
+li a {
+  display: block;
+  font-size:25px;  
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #e6f2f5;
+}
+
+header {
+  padding: 30px;
+  font-size: 35px;
+  color: white;
+  top:0; 
+  position:relative;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+img{
+  width: 100%;
+}
+body{ 
+  background-color:#bbe4f8;
+ text-align: center;
+} 
+</style>
+<body>
+<header> 
+ <img src= "../Images/logo.jpg" style="width:200px"> 
+ <ul>
+  <li><a href="Self-Care.html">Self-Care</a></li>
+        <li><a href="Schedule.html" >Schedule</a></li>
+  <li><a href="ZenGarden.html">Zen Garden</a></li>
+  <li><a href="MealIdeas.html">Meal Organizer</a></li>
+
+        <li><a href="../index.php" target="">Logout</a></li>
+  </ul>
+</header>
+  <main id = "content">
+    <div id = "image-container">
+    </div>
+    <!--<h1 id = "enjoy">Enjoy to some Meditation Music!</h1>-->
+    <audio autoplay loop>
+      <source src="MeditationMusic.mp3" type="audio/mpeg">
+      </audio>
+  </main>
+<!-- <div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <img src="Images/Beach Art.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="Images/Mountainscape Art.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="Images/Study Art.jpg" style="width:100%">
+  </div>
+</div> -->
+
+
+
+<script>
+var picIndex = 0;
+var pictures = ['Images/Background.jpg','Images/Mountainscape Art.jpg', 'Images/Beach Art.jpg', 'Images/Study Art.jpg']
+showSlides();
+
+function showSlides() {
+  // var slides = document.getElementsByClassName("mySlides");
+  document.getElementById('image-container').innerHTML = '<img class = "fade" src="' + pictures[picIndex] + '">';
+  picIndex++;
+  if (picIndex == pictures.length) {picIndex = 0;}
+  // slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 5000); // Change image every 5 seconds
+}
+
+</script>
+
+</body>
+
+
+
+
+
+
+
+
+</html> 

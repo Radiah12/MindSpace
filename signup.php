@@ -1,9 +1,37 @@
-<?php
-    require "header.php"; 
-?>
-
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8"> 
+<meta name="description" content="This is an example"> 
+<meta name="viewport" content="width=device-width,initial-scale=1"> 
+<title></title> 
+<link rel="stylesheet" href="style.css">
+<style></style>
+</head>
+<body>
+<header> 
+    <img src= "Images/logo.jpg" style="width:200px"> 
+    <ul>
+    <li><a href="Self-Care.html">Self-Care</a></li>
+            <li><a href="Schedule.html" >Schedule</a></li>
+    <li><a href="ZenGarden/ZenGarden.html">Zen Garden</a></li>
+    <li><a href="MealIdeas/MealIdeas.html">Meal Organizer</a></li>
+    <li><div>
+       <?php
+           if(isset($_SESSION['userId'])){
+            echo '<form action="includes/logout.inc.php" method="post">
+                <button type="submit" name="logout-submit">Logout</button>
+            </form> ';
+           }
+           else{
+               echo '<button style="margin-left:20%" type="submit">Login</button>';
+           }
+       ?>
+    </div> </li>
+    </ul>
+</header>
     <main> 
-       <h1>Signup</h1>
+       <h1>Sign Up</h1>
        <?php
             if(isset($_GET['error'])){
                 if($_GET['error'] == "emptyfields"){ 
@@ -22,8 +50,7 @@
 
             }
        ?>
-       <!--include class from css style sheet to make it look fancy-->
-       <form action="includes/signup.inc.php" method="post">
+       <form action="includes/signup.inc.php"  style = "text-align:center;" method="post">
             <br><br>
             <label>New Username</label>
             <input type="text" name="uid" placeholder="Username">
@@ -37,10 +64,8 @@
             <label>Repeat Password</label>
             <input type="password" name="pwd-repeat" placeholder="Repeat Password">
             <br><br>
-            <button type="submit" name="signup-submit">Signup</button>
+            <button type="submit" name="signup-submit">Sign Up</button>
             </form>
-    </main> 
-
-<?php
-    require "footer.php"
-?>
+    </main>
+</body>
+</html>

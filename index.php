@@ -11,12 +11,14 @@
 <link rel="stylesheet" href="style.css">
 </head> 
 <body> 
-<header>
-    <nav> 
-        <a href="#"> 
-            <img src="Images/Haikyuu-logo.png" alt="logo"> 
-        </a> 
-    <div>
+<header> 
+    <img src= "Images/logo.jpg" style="width:200px"> 
+    <ul>
+    <li><a href="Self-Care.html">Self-Care</a></li>
+            <li><a href="Schedule.html" >Schedule</a></li>
+    <li><a href="ZenGarden.html">Zen Garden</a></li>
+    <li><a href="MealIdeas.html">Meal Organizer</a></li>
+    <li><div>
        <?php
            if(isset($_SESSION['userId'])){
             echo '<form action="includes/logout.inc.php" method="post">
@@ -24,12 +26,12 @@
             </form> ';
            }
            else{
-               echo '<button type = "submit">Login</button>';
+               echo '<button style="margin-left:20%" type="submit">Login</button>';
            }
        ?>
-    </div> 
-    </nav>
-</header> 
+    </div> </li>
+    </ul>
+</header>
 <main> 
     <?php 
         if(isset($_SESSION['userId'])){ 
@@ -44,12 +46,13 @@
             </nav>';
             }else{
                 echo '<p>You are logged out!</p>'; 
-                echo '<form action="includes/login.inc.php" method="post">
+                echo '<div style = "text-align: center;"><form action="includes/login.inc.php" method="post">
                 <input type="text" name="mailuid" placeholder="Username/Email...">
                 <input type="password" name="pwd" placeholder="Password...">
                 <button type="submit" name="login-submit">Login</button> 
-                </form> 
-                <a href="signup.php">Signup</a>'; 
+                </form>
+                <a href="signup.php">Signup</a>
+                </div>'; 
             
             }
     ?>
