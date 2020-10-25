@@ -2,7 +2,7 @@
 <html>
  <head> 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Zen Garden</title>
+<title>Meal Ideas</title>
 <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
 <link href = "../style.css" rel = "stylesheet" >
 </head>
@@ -36,7 +36,7 @@ img{
             <a href="#">Home</a>
             <a href="../Schedule/schedule.php">Schedule</a>
             <a href="../ZenGarden/ZenGarden.php">Zen Garden</a>
-            <a href="../MealIdeas/MealIdeas.php">Meal Organizer</a>
+            <a href="../MealPage/mealpage.php">Meal Organizer</a>
             <a href="../SelfCare/selfcare.php">Self-Care</a>
             <a href="#">Settings</a>
         </div>
@@ -45,8 +45,8 @@ img{
  <img src= "../Images/logo.jpg" style="width:200px"> 
  <ul>
   <li><a href="../SelfCare/selfcare.php">Self-Care</a></li>
-        <li><a href="Schedule.php" >Schedule</a></li>
-  <li><a href="ZenGarden.php">Zen Garden</a></li>
+        <li><a href="../Schedule/Schedule.php" >Schedule</a></li>
+  <li><a href="../ZenGarden/ZenGarden.php">Zen Garden</a></li>
   <li><a href="MealIdeas.php">Meal Organizer</a></li>
   <li><div>
     <?php
@@ -62,18 +62,16 @@ img{
  </div></li>
   </ul>
 </header>
+<h1>Ideas for Meals</h1>
   <main id = "content">
     <div id = "image-container">
     </div>
-    <audio autoplay loop>
-      <source src="MeditationMusic.mp3" type="audio/mpeg">
-      </audio>
   </main>
 
 
 <script>
 var picIndex = 0;
-var pictures = ['Images/Background.jpg','Images/Mountainscape Art.jpg', 'Images/Beach Art.jpg', 'Images/Study Art.jpg']
+var pictures = ['Images/Image1.jpg','Images/Image2.jpg', 'Images/Image3.jpg', 'Images/Image4.jpg']
 showSlides();
 
 function showSlides() {

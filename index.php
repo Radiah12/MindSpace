@@ -18,7 +18,7 @@
             <a href="#">Home</a>
             <a href="Schedule/schedule.html">Schedule</a>
             <a href="ZenGarden/ZenGarden.php">Zen Garden</a>
-            <a href="MealPage/mealpage.php">Meal Organizer</a>
+            <a href="MealIdeas/MealIdeas.php">Meal Organizer</a>
             <a href="SelfCare/selfcare.php">Self-Care</a>
             <a href="#">Settings</a>
         </div>
