@@ -30,15 +30,15 @@
     <li><div>
        <?php
            if(isset($_SESSION['userId'])){
-            echo '<form action="includes/logout.inc.php" method="post">
+            echo '<form action="../includes/logout.inc.php" method="post">
                 <button type="submit" name="logout-submit">Logout</button>
             </form> ';
            }
            else{
-               echo '<button style="margin-left:20%" type="submit">Login</button>';
+               echo '<form action="includes/login.inc.php" method="post"><button style="margin-left:20%" type="submit">Login</button></form>';
            }
        ?>
-    </div> </li>
+</div> </li>
     </ul>
 </header>
     <main> 
