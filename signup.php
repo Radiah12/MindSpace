@@ -12,10 +12,10 @@
 <header> 
     <img src= "Images/logo.jpg" style="width:200px"> 
     <ul>
-    <li><a href="Self-Care.html">Self-Care</a></li>
-            <li><a href="Schedule.html" >Schedule</a></li>
-    <li><a href="ZenGarden/ZenGarden.html">Zen Garden</a></li>
-    <li><a href="MealIdeas/MealIdeas.html">Meal Organizer</a></li>
+    <li><a href="Self-Care.php">Self-Care</a></li>
+            <li><a href="Schedule.php" >Schedule</a></li>
+    <li><a href="ZenGarden/ZenGarden.php">Zen Garden</a></li>
+    <li><a href="MealIdeas/MealIdeas.php">Meal Organizer</a></li>
     <li><div>
        <?php
            if(isset($_SESSION['userId'])){

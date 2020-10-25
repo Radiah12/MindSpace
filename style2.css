@@ -8,13 +8,13 @@ h1{
 }
 section{
     border: dodgerblue;
-    margin: 10px;
+    margin: auto;
     background-color: #cfe6f0;
     border: ivory;
     margin-bottom: 5px;
     padding-bottom: 1%;
 }
-button{
+/* button{
     text-align: center;
     background-color: dodgerblue;
     color: rgb(255, 255, 255);
@@ -23,10 +23,13 @@ button{
     font-size: 100%;
     border-color: rgb(219, 235, 255);
     border-radius: 10%;
+} */
+.carebtn{
+    padding: 3%;
+    font-size: 15px;
 }
 h3{
     color: #1363cc;
-    font-family: serif;
 }
 h2{
     color:#1363cc;
@@ -43,7 +46,4 @@ div{
 header{
     margin:auto;
     text-align: center;
-}
-body{
-    background-image: url("img/white art.png");
 }

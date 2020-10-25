@@ -11,13 +11,24 @@
 <link rel="stylesheet" href="style.css">
 </head> 
 <body> 
+<div class="dropdown">
+        <button class="dropbtn">Menu</button>
+        <div class="dropdown-content">
+            <a href="#">Home</a>
+            <a href="Schedule/schedule.html">Schedule</a>
+            <a href="ZenGarden/ZenGarden.php">Zen Garden</a>
+            <a href="MealPage/mealpage.php">Meal Organizer</a>
+            <a href="SelfCare/selfcare.php">Self-Care</a>
+            <a href="#">Settings</a>
+        </div>
+    </div>
 <header> 
     <img src= "Images/logo.jpg" style="width:200px"> 
     <ul>
-    <li><a href="Self-Care.html">Self-Care</a></li>
-            <li><a href="Schedule.html" >Schedule</a></li>
-    <li><a href="ZenGarden.html">Zen Garden</a></li>
-    <li><a href="MealIdeas.html">Meal Organizer</a></li>
+    <li><a href="SelfCare/selfcare.php">Self-Care</a></li>
+            <li><a href="Schedule.php" >Schedule</a></li>
+    <li><a href="ZenGarden/ZenGarden.php">Zen Garden</a></li>
+    <li><a href="MealIdeas.php">Meal Organizer</a></li>
     <li><div>
        <?php
            if(isset($_SESSION['userId'])){
@@ -36,14 +47,6 @@
     <?php 
         if(isset($_SESSION['userId'])){ 
                 echo '<p>You are logged in!</p>';  
-                echo '<nav class="navigation navsize">
-                <ul>
-                    <li><a href="index.php">Home</a></li>
-                    <li><a href="Zen.html">Zen Garden</a></li>
-                    <li><a href="schedule.php">Schedule</a></li>
-                    <li><a href="selfcaree.html">Self-Care</a></li>
-                </ul>
-            </nav>';
             }else{
                 echo '<p>You are logged out!</p>'; 
                 echo '<div style = "text-align: center;"><form action="includes/login.inc.php" method="post">
@@ -60,3 +63,4 @@
 <footer> </footer> 
 </body>
 </html> 
+

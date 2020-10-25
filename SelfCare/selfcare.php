@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="style2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="../style2.css">
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <style>
             .dropbtn {
@@ -40,32 +42,35 @@
             .dropdown:hover .dropbtn {background-color: #2e76b9;}
             </style>
             </head>
-            <body>
-            
-            <!--You can add some description-->
-            <p></p>
-            
-            <div class="dropdown">
-              <button class="dropbtn">Menu</button>
-              <div class="dropdown-content">
-                <a href="index.php">Home</a>
-                <a href="#">Schedule</a>
-                <a href="ZenGarden.html">Zen Garden</a>
-                <a href="mealPage.html">Meal Organizer</a>
-                <a href="selfcare.html">Self-Care</a>
-                <a href="#">Settings</a>
-              </div>
-            </div>
-    </head>
-
-    <header><img src="img/logo.png" alt="logo" width=150 height=150></header>
+<body>
+  <header> 
+    <img src= "../Images/logo.jpg" style="width:200px"> 
+    <ul>
+     <li><a href="#">Self-Care</a></li>
+           <li><a href="Schedule.php" >Schedule</a></li>
+     <li><a href="../ZenGarden/ZenGarden.php">Zen Garden</a></li>
+     <li><a href="../MealIdeas/MealIdeas.php">Meal Organizer</a></li>
+   <li><div>
+       <?php
+           if(isset($_SESSION['userId'])){
+            echo '<form action="includes/logout.inc.php" method="post">
+                <button type="submit" name="logout-submit">Logout</button>
+            </form> ';
+           }
+           else{
+               echo '<button style="margin-left:20%" type="submit">Login</button>';
+           }
+       ?>
+</div> </li>
+     </ul>
+   </header>
     <h1>Self-care</h1>
         <div>
         <h2>Select a skin type</h2>
-        <button type="button" onclick="Normfunc()">Normal</button>
-        <button type="button" onclick="Dryfunc()">Dry</button>
-        <button type="button" onclick="Oilfunc()">Oily</button>
-        <button type="button" onclick="Combfunc()">Combination</button>
+        <button type="button" class = "carebtn" onclick="Normfunc()">Normal</button>
+        <button type="button" class = "carebtn" onclick="Dryfunc()">Dry</button>
+        <button type="button" class = "carebtn" onclick="Oilfunc()">Oily</button>
+        <button type="button" class = "carebtn" onclick="Combfunc()">Combination</button>
         </div>
 
         <section>
@@ -103,10 +108,10 @@
 
         <div>
             <h2 class="select">Select a hair type (Oprah Winfrey's classification)</h2>
-            <button type="button" onclick="func1()">Type 1: Straight</button>
-            <button type="button" onclick="func2()">Type 2: Wavy</button>
-            <button type="button" onclick="func3()">Type 3: Curley</button>
-            <button type="button" onclick="func4()">Type 4: Coiled</button>
+            <button type="button" class = "carebtn" onclick="func1()">Type 1: Straight</button>
+            <button type="button" class = "carebtn" onclick="func2()">Type 2: Wavy</button>
+            <button type="button" class = "carebtn" onclick="func3()">Type 3: Curley</button>
+            <button type="button" class = "carebtn" onclick="func4()">Type 4: Coiled</button>
             </div>
     
             <section>
