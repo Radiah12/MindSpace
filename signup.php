@@ -9,6 +9,17 @@
 <style></style>
 </head>
 <body>
+<div class="dropdown">
+        <button class="dropbtn">Menu</button>
+        <div class="dropdown-content">
+            <a href="#">Home</a>
+            <a href="../Schedule/schedule.php">Schedule</a>
+            <a href="../ZenGarden/ZenGarden.php">Zen Garden</a>
+            <a href="../MealPage/mealpage.php">Meal Organizer</a>
+            <a href="../SelfCare/selfcare.php">Self-Care</a>
+            <a href="#">Settings</a>
+        </div>
+    </div>
 <header> 
     <img src= "Images/logo.jpg" style="width:200px"> 
     <ul>
